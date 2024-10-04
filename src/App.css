@@ -1,0 +1,100 @@
+:root {
+  --primary-color: #4CAF50;
+  --secondary-color: #f9f9f9;
+  --text-color: #333;
+  --border-radius: 4px; /* Increased border radius for a softer look */
+  --padding: 10px; /* Increased padding for better spacing */
+  --max-width: 800px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  background-color: white;
+  padding: var(--padding);
+  border-radius: var(--border-radius);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: var(--max-width);
+  text-align: center;
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 12px 20px; /* Increased padding for buttons */
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s; /* Smooth transition for button color */
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:disabled {
+  background-color: #a5d6a7;
+  cursor: not-allowed;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+  -webkit-appearance: none; 
+  appearance: none;         
+}
+
+h2, h3 {
+  margin-top: 20px;
+}
+
+div {
+  margin-bottom: 20px;
+}
+
+input[type="number"] {
+  -webkit-appearance: none;   
+  appearance: none;           
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .App {
+      padding: 15px; /* Slightly increased padding for mobile */
+  }
+
+  h1 {
+      font-size: 1.5rem;
+  }
+
+  button {
+      width: 100%;
+  }
+}
